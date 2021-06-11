@@ -4,13 +4,30 @@
     <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <h1>Simple Interest Calculator</h1>
+        h1 >Simple Interest Calculator</h1>
+	
+        <div class="maindiv">
+     Amount <input type="number" id="principal"> <br/>
+     Rate <input type="range" id="rate" min="minval" max="maxval" value="default_val">
+     <span id="rate_val">10.25%</span><br/>
+     No. of years 
+     <select id="years">
+         <option value="1">1</option>
+		 <option value="2">2</option>
+		 <option value="3">3</option>
+		 <option value="4">4</option>
+		 <option value="5">5</option>
+		
+     </select> <br/>
+     Interest : <span id="result"></span><br/>
+     <button onclick="compute[)">Compute</button>
+     <span id="result"></span>
+	 </div>
+	 <p>if you deposit 1000000</p>
+	 <p>at internet rate of 3.5%</p>
+	 <p>you will receive an amount of 175000</p>
+	 <p>in the year 2025</p>
 
-        Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="number"  id="rate">  <br/>
-        No. of Years <input type="number"  id="years">  <br/>
-        Interest : <span id="result"></span><br>
-
-        <button onclick="compute()">Compute</button>
+     <footer>&#169; this Calculator belong to BADO Iliass</footer>
     </body>
 </html>
